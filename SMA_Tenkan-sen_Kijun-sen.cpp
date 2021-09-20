@@ -1,7 +1,6 @@
 /*
 The explanation and evaluation of this code is given in the SMA Tenkan-sen Kijun-sen model document also in the repository.
 
-For questions or comments you can contact my reddit account: s1123581321
 */
 
 #include <iostream>
