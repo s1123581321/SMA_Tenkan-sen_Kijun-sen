@@ -1,6 +1,5 @@
 /*
-The explanation and evaluation of this code is given in the SMA Tenkan-sen Kijun-sen model document also in the repository.
-
+The explanation of this code is given in the SMA Tenkan-sen Kijun-sen model document also in the repository.
 */
 
 #include <iostream>
@@ -89,8 +88,7 @@ int main(){
             }else if(b_open==true){
                 if(Ks>Ts){
                     b_open=false;
-                    //pl=close[pnt]-b_open_price;
-                    pl=b_open_price-close[pnt];
+                    pl=close[pnt]-b_open_price;
                     pl_output_file<<pl<<endl;
                 }
             }
@@ -116,8 +114,7 @@ int main(){
             }else if(s_open==true){
                 if(Ks<Ts){
                     s_open=false;
-                    //pl=s_open_price-close[pnt];
-                    pl=close[pnt]-s_open_price;
+                    pl=s_open_price-close[pnt];
                     pl_output_file<<pl<<endl;
                 }
             }
